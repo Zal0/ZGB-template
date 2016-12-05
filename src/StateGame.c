@@ -24,8 +24,6 @@ void Start_STATE_GAME() {
 	InitScrollTiles(0, 2, tiles, 3);
 	InitScroll(mapWidth, mapHeight, map, 0, 0, 3);
 	SHOW_BKG;
-	
-	asasd
 }
 
 void Update_STATE_GAME() {
