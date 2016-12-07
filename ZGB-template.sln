@@ -9,18 +9,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "%ZGB_PATH%\common
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
+		Debug|x86 = Debug|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Debug|x86.ActiveCfg = Debug|Win32
-		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Debug|x86.Build.0 = Debug|Win32
 		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Release|x86.ActiveCfg = Release|Win32
 		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Release|x86.Build.0 = Release|Win32
-		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Debug|x86.ActiveCfg = Debug|Win32
-		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Debug|x86.Build.0 = Debug|Win32
+		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Debug|x86.ActiveCfg = Debug|Win32
+		{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}.Debug|x86.Build.0 = Debug|Win32
 		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Release|x86.ActiveCfg = Release|Win32
 		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Release|x86.Build.0 = Release|Win32
+		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A820F4AF-3BAD-4781-86FB-C055E213A91D}.Debug|x86.Build.0 = Debug|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
