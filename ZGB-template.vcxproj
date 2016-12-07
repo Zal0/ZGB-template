@@ -24,7 +24,7 @@
     <None Include="src\Makefile" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZGB\common\common.vcxproj">
+    <ProjectReference Include="$(ZGB_PATH)\common.vcxproj">
       <Project>{a820f4af-3bad-4781-86fb-c055e213a91d}</Project>
     </ProjectReference>
   </ItemGroup>
