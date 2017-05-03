@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZGB-template", "ZGB-template.vcxproj", "{8D0F6F5E-016B-4FA8-B1C0-FA65BF6791B0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\ZGB\common\common.vcxproj", "{A820F4AF-3BAD-4781-86FB-C055E213A91D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "%ZGB_PATH%\common.vcxproj", "{A820F4AF-3BAD-4781-86FB-C055E213A91D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
