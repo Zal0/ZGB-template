@@ -14,12 +14,6 @@
     <ClInclude Include="include\ZGBMain.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\StateGame.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\SpritePlayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ZGBMain.c">

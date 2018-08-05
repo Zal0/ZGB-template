@@ -1,5 +1,5 @@
 #pragma bank 2
-#include "StateGame.h"
+#include "main.h"
 UINT8 bank_STATE_GAME = 2;
 
 #include "..\res\src\tiles.h"
