@@ -31,9 +31,6 @@
     <ClCompile Include="src\SpritePlayer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ZGBMain_Init.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="src\Makefile" />

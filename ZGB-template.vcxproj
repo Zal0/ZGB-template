@@ -22,7 +22,6 @@
     <ClCompile Include="src\SpritePlayer.c" />
     <ClCompile Include="src\StateGame.c" />
     <ClCompile Include="src\ZGBMain.c" />
-    <ClCompile Include="src\ZGBMain_Init.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\SpritePlayer.h" />
