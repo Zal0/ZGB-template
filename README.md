@@ -1,2 +1,2 @@
 # ZGB-template
-a template for projects using ZGB, the engine I developed for the orginal Game Boy
+A template for projects using [ZGB](https://github.com/Zal0/ZGB), A little engine for creating games for the original GameBoy
