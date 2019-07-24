@@ -1,12 +1,10 @@
-#pragma bank 2
-#include "main.h"
-UINT8 bank_SPRITE_PLAYER = 2;
+#include "Banks/SetBank2.h"
 
-void Start_SPRITE_PLAYER() {
+void Start_SpritePlayer() {
 }
 
-void Update_SPRITE_PLAYER() {
+void Update_SpritePlayer() {
 }
 
-void Destroy_SPRITE_PLAYER() {
+void Destroy_SpritePlayer() {
 }

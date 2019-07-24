@@ -1,6 +1,4 @@
-#pragma bank 2
-#include "main.h"
-UINT8 bank_STATE_GAME = 2;
+#include "Banks/SetBank2.h"
 
 #include "..\res\src\tiles.h"
 #include "..\res\src\map.h"
@@ -9,7 +7,7 @@ UINT8 bank_STATE_GAME = 2;
 #include "Scroll.h"
 #include "SpriteManager.h"
 
-void Start_STATE_GAME() {
+void Start_StateGame() {
 	UINT8 i;
 
 	SPRITES_8x16;
@@ -18,12 +16,12 @@ void Start_STATE_GAME() {
 	}
 	SHOW_SPRITES;
 
-	scroll_target = SpriteManagerAdd(SPRITE_PLAYER, 50, 50);
+	scroll_target = SpriteManagerAdd(SpritePlayer, 50, 50);
 
 	InitScrollTiles(0, 2, tiles, 3);
 	InitScroll(mapWidth, mapHeight, map, 0, 0, 3);
 	SHOW_BKG;
 }
 
-void Update_STATE_GAME() {
+void Update_StateGame() {
 }
