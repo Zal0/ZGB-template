@@ -18,8 +18,8 @@ void Start_StateGame() {
 
 	scroll_target = SpriteManagerAdd(SpritePlayer, 50, 50);
 
-	InitScrollTiles(0, &tiles, bank_tiles);
-	InitScroll(mapWidth, mapHeight, map, 0, 0, 3);
+	InitScrollTiles(0, &tiles);
+	InitScroll(&map, 0, 0);
 	SHOW_BKG;
 }
 
