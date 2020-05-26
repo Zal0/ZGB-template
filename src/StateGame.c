@@ -18,7 +18,6 @@ void Start_StateGame() {
 
 	scroll_target = SpriteManagerAdd(SpritePlayer, 50, 50);
 
-	InitScrollTiles(0, &tiles);
 	InitScroll(&map, 0, 0);
 	SHOW_BKG;
 }
