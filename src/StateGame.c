@@ -1,7 +1,7 @@
 #include "Banks/SetBank2.h"
 
-#include "..\res\src\tiles.h"
-#include "..\res\src\map.h"
+#include "../res/src/tiles.h"
+#include "../res/src/map.h"
 
 #include "ZGBMain.h"
 #include "Scroll.h"
