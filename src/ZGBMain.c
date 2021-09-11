@@ -3,15 +3,19 @@
 
 UINT8 next_state = StateGame;
 
-UINT8 GetTileReplacement(UINT8* tile_ptr, UINT8* tile) {
-	if(current_state == StateGame) {
-		if(U_LESS_THAN(255 - (UINT16)*tile_ptr, N_SPRITE_TYPES)) {
-			*tile = 0;
-			return 255 - (UINT16)*tile_ptr;
-		}
+extern UINT8* tile_replacement_tile_ptr;
+extern UINT8* tile_replacement_ptr;
+extern UINT8  tile_replacement_enemy_type;
 
-		*tile = *tile_ptr;
+void GetTileReplacement() {
+	if(current_state == StateGame) {
+		tile_replacement_enemy_type = (255u - *tile_replacement_tile_ptr);
+		if(tile_replacement_enemy_type < N_SPRITE_TYPES) {
+			*tile_replacement_ptr = 0;
+			return;
+		}
 	}
 
-	return 255u;
+	tile_replacement_enemy_type = 255u;
+	*tile_replacement_ptr = *tile_replacement_tile_ptr;
 }
