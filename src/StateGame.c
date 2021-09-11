@@ -1,13 +1,12 @@
-#include "Banks/SetBank2.h"
-
-#include "../res/src/tiles.h"
-#include "../res/src/map.h"
+#include "Banks/SetAutoBank.h"
 
 #include "ZGBMain.h"
 #include "Scroll.h"
 #include "SpriteManager.h"
 
-void Start_StateGame() {
+IMPORT_MAP(map);
+
+void START() {
 	UINT8 i;
 
 	SPRITES_8x16;
@@ -17,10 +16,9 @@ void Start_StateGame() {
 	SHOW_SPRITES;
 
 	scroll_target = SpriteManagerAdd(SpritePlayer, 50, 50);
-
-	InitScroll(&map, 0, 0);
+	InitScroll(BANK(map), &map, 0, 0);
 	SHOW_BKG;
 }
 
-void Update_StateGame() {
+void UPDATE() {
 }

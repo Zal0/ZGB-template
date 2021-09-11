@@ -1,10 +1,10 @@
-#include "Banks/SetBank2.h"
+#include "Banks/SetAutoBank.h"
 
-void Start_SpritePlayer() {
+void START() {
 }
 
-void Update_SpritePlayer() {
+void UPDATE() {
 }
 
-void Destroy_SpritePlayer() {
+void DESTROY() {
 }
