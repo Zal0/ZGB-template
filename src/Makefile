@@ -2,7 +2,8 @@ PROJECT_NAME = ZGB_TEMPLATE
 
 all: build_gb
 
-N_BANKS = 4
+# Number of banks (must be a power of 2): A (Automatic), 2, 4, 8, 16, 32...
+N_BANKS = A
 
 # Music player: HUGETRACKER(default) or GBT_PLAYER
 MUSIC_PLAYER = GBT_PLAYER
