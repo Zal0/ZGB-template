@@ -4,7 +4,24 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "ZGB build",
+            "label": "Release",
+            "type": "shell",
+            "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "isBackground": false,
+            "args": [
+                "BUILD_TYPE=Release"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Debug",
             "type": "shell",
             "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
             "options": {
@@ -21,20 +38,19 @@
             }
         },
         {
-            "label": "Launch emulicious",
+            "label": "Clean",
             "type": "shell",
-            "command": "START",
+            "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "isBackground": false,
             "args": [
-                "/B",
-                "${env:ZGB_PATH}/../env/emulicious/Emulicious.jar"
-            ]
-        },
-        {
-            "label": "ZGB run",
-            "dependsOrder": "sequence",
-            "dependsOn": [
-                "Launch emulicious",
-                "ZGB build"
+                "BUILD_TYPE=${defaultBuildTask}",
+                "clean"
+            ],
+            "problemMatcher": [
+                "$gcc"
             ]
         }
     ]
