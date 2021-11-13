@@ -21,6 +21,23 @@
             }
         },
         {
+            "label": "ReleaseColor",
+            "type": "shell",
+            "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "isBackground": false,
+            "args": [
+                "BUILD_TYPE=ReleaseColor"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
             "label": "Debug",
             "type": "shell",
             "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
@@ -31,7 +48,28 @@
             "args": [
                 "BUILD_TYPE=Debug"
             ],
-            "problemMatcher": [],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "DebugColor",
+            "type": "shell",
+            "command": "${env:ZGB_PATH}/../env/make-3.81-bin/bin/make",
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
+            "isBackground": false,
+            "args": [
+                "BUILD_TYPE=DebugColor"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true

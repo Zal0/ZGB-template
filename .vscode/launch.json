@@ -18,6 +18,17 @@
         {
             "type": "emulicious-debugger",
             "request": "launch",
+            "name": "DebugColor",
+            "program": "${workspaceFolder}/bin/ZGB_TEMPLATE_Debug.gbc",
+            "port": 58870,
+            "stopOnEntry": false,
+            "additionalSrcFolders": "${env:ZGB_PATH}",
+            "emuliciousPath": "${env:ZGB_PATH}/../env/emulicious/emulicious.jar",
+            "preLaunchTask": "DebugColor",
+        },
+        {
+            "type": "emulicious-debugger",
+            "request": "launch",
             "name": "Release",
             "program": "${workspaceFolder}/bin/ZGB_TEMPLATE.gb",
             "port": 58870,
@@ -25,6 +36,17 @@
             "additionalSrcFolders": "${env:ZGB_PATH}",
             "emuliciousPath": "${env:ZGB_PATH}/../env/emulicious/emulicious.jar",
             "preLaunchTask": "Release",
+        },
+        {
+            "type": "emulicious-debugger",
+            "request": "launch",
+            "name": "ReleaseColor",
+            "program": "${workspaceFolder}/bin/ZGB_TEMPLATE.gbc",
+            "port": 58870,
+            "stopOnEntry": false,
+            "additionalSrcFolders": "${env:ZGB_PATH}",
+            "emuliciousPath": "${env:ZGB_PATH}/../env/emulicious/emulicious.jar",
+            "preLaunchTask": "ReleaseColor",
         }
     ]
 }
