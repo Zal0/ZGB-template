@@ -68,6 +68,7 @@ artifacts/
 *.pidb
 *.svclog
 *.scc
+*Makefile.uptodate
 
 # Chutzpah Test files
 _Chutzpah*
